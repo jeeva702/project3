@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mortgage Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Mortgage Loan Calculator</h1>
+    <form>
+      <label for="loan-amount">Loan Amount (₹):</label>
+      <input type="number" id="loan-amount" name="loan-amount"><br>
+
+      <label for="interest-rate">Interest Rate (%):</label>
+      <input type="number" id="interest-rate" name="interest-rate"><br>
+
+      <label for="loan-term">Loan Term (years):</label>
+      <input type="number" id="loan-term" name="loan-term"><br>
+
+      <label for="down-payment">Down Payment (₹):</label>
+      <input type="number" id="down-payment" name="down-payment"><br>
+
+      <button type="button" id="calculate-button">Calculate</button>
+    </form>
+
+    <div id="result">
+      <p>Monthly Payment: <span id="monthly-payment"></span>₹</p>
+      <p>Total Cost: <span id="total-cost"></span>₹</p>
+    </div>
+
+    <script src="loan.js"></script>
+  </body>
+</html>
